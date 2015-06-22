@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFF_SIZE	tools.h	/^#define BUFF_SIZE /;"	d
+CC	Makefile	/^CC              = clang$/;"	m
+CFLAGS	Makefile	/^CFLAGS          = -Wall -Wextra -std=c99 -O0$/;"	m
+DEBUGFLAG	Makefile	/^DEBUGFLAG       = -g$/;"	m
+NAME	Makefile	/^NAME            = msh$/;"	m
+OBJ	Makefile	/^OBJ             = $(SRCS:.c=.o)$/;"	m
+RM	Makefile	/^RM              = rm -rf$/;"	m
+SRCS	Makefile	/^SRCS            = main.c\\$/;"	m
+_BUILTINS_H_	builtins.h	/^#define _BUILTINS_H_$/;"	d
+_PATH_H_	path.h	/^#define _PATH_H_$/;"	d
+_PROMPT_H_	prompt.h	/^#define _PROMPT_H_$/;"	d
+_SHELL_H_	shell.h	/^#define _SHELL_H_$/;"	d
+_TOOLS_H_	tools.h	/^#define _TOOLS_H_$/;"	d
+cd	builtins.c	/^int cd(char* cmd, char** args)$/;"	f
+check_builtins	shell.c	/^int check_builtins(char* cmd, char** args)$/;"	f
+check_exit	shell.c	/^void check_exit(char* cmd, char**args, char** paths)$/;"	f
+clean_paths	path.c	/^char** clean_paths(char* var)$/;"	f
+count_words	tools.c	/^int count_words(char* str, char delim)$/;"	f
+exec_cmd	shell.c	/^void exec_cmd(char* cmd, char** args, char** paths, char** env)$/;"	f
+extract_paths	path.c	/^char** extract_paths(char** env)$/;"	f
+free_tabs	shell.c	/^void free_tabs(char** args, char** paths)$/;"	f
+is_PATH	path.c	/^int is_PATH(char* var)$/;"	f
+main	main.c	/^int main(int argc, char **argv, char **env)$/;"	f
+my_strlen	tools.c	/^int my_strlen(char *c)$/;"	f
+prompt	prompt.c	/^void prompt()$/;"	f
+puterr	tools.c	/^void puterr(char *c)$/;"	f
+putstr	tools.c	/^void putstr(char *c)$/;"	f
+shell	shell.c	/^void shell(char** env)$/;"	f
+str_concat	tools.c	/^char* str_concat(char* str1, char* str2)$/;"	f
+str_equals	tools.c	/^int str_equals(char* str1, char* str2)$/;"	f
+str_to_words	tools.c	/^char** str_to_words(char* str, char delim)$/;"	f
+str_tri_concat	tools.c	/^char* str_tri_concat(char* str1, char* str2, char* str3)$/;"	f
+word_length	tools.c	/^int word_length(char* word, int pos, char delim)$/;"	f
+xmalloc	tools.c	/^void* xmalloc(int size)$/;"	f
